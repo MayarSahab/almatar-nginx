@@ -539,7 +539,7 @@ initContainers:
 ingress:
   ## Set to true to enable ingress record generation
   ##
-  enabled: false
+  enabled: true
 
   ## Set this to true in order to add the corresponding annotations for cert-manager
   ##
@@ -555,12 +555,12 @@ ingress:
 
   ## When the ingress is enabled, a host pointing to this will be created
   ##
-  hostname: nginx.local
+  hostname: nginx.test-almatar.com
 
   ## The Path to Nginx. You may need to set this to '/*' in order to use this
   ## with ALB ingress controllers.
   ##
-  path: /
+  path: /*
 
   ## Ingress annotations done as key:value pairs
   ## For a full list of possible ingress annotations, please see
